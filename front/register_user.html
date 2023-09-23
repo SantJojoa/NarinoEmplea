@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nariño Emplea | Registrarse</title>
+    <link rel="stylesheet" href="../assets/css/styleregister.css">
+</head>
+<body>
+    <form action="http://localhost/Narino_Emplea/back/register.php" method="post">
+        <h1>Registrarse</h1>
+        <div class="inputBox">
+            <input name="name" type="text" placeholder="Nombre(s)" required>
+        </div>
+        <div class="inputBox">
+            <input name="l_name" type="text" placeholder="Primer Apellido" required>
+        </div>
+        <div class="inputBox">
+            <input name="sl_name" placeholder="Segundo Apellido" type="text" required>
+        </div>
+        <div class="inputBox">
+            <input name="ced" placeholder="Numero de Cedula" type="text" required>
+        </div>
+        <div class="inputBox">
+            <input name="email" placeholder="Email" type="text" required>
+        </div>
+        <div class="inputBox">
+            <input name="pass" placeholder="Contraseña" type="password" required>
+        </div>
+        <div class="inputBox">
+            <input name="passc" placeholder="Confirmar Contraseña" type="password" required>
+        </div>
+        <div class="inputBox">
+            <input type="submit" value="Registarse">
+        </div>
+        <p>¿Ya tiene una cuenta? <a href="#">Inciar Sesion</a></p>
+    </form>
+</body>
+</html>
