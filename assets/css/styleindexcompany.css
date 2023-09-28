@@ -6,7 +6,7 @@
 .banner{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.80),rgba(0, 0, 0, 0.80)),url(../img/volcan_galeras.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.80),rgba(0, 0, 0, 0.80)),url(../img/lajas5.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -38,7 +38,7 @@
     content: '';
     height: 3px;
     width: 0%;
-    background: #F2CB05;
+    background: #05f240;
     position: absolute;
     left: 0;
     bottom: -10px;
@@ -71,7 +71,7 @@ button{
     margin: 20px 10px;
     border-radius: 25px;
     font-weight: bold;
-    border: 2px solid #F2CB05;
+    border: 2px solid #05f240;
     background: transparent;
     color: #fff;
     cursor: pointer;
@@ -79,7 +79,7 @@ button{
     overflow: hidden;
 }
 span{
-    background: #F2CB05;
+    background: #05f240;
     height: 100%;
     width: 0%;
     border-radius: 25px;
@@ -103,7 +103,7 @@ button:hover{
     margin: 20px 10px;
     border-radius: 25px;
     font-weight: bold;
-    border: 2px solid #F2CB05;
+    border: 2px solid #05f240;
     background: transparent;
     color: #fff;
     cursor: pointer;
@@ -113,7 +113,7 @@ button:hover{
 }
 
 .button-link span {
-    background: #F2CB05;
+    background: #05f240;
     height: 100%;
     width: 0%;
     border-radius: 25px;

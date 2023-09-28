@@ -4,17 +4,16 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-:root{
-    --clr: #0ab3ff;
 
-}
 body{
+    /* Fondo del todo */
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: #1c2630;
 }
+
 form{
     background: #29313c;
     padding: 60px 80px 60px;
@@ -23,14 +22,16 @@ form{
     flex-direction: column;
     border-radius: 10px;
 }
+
 form h1{
     color: #fff;
-    font-weight: 500;
+    font-weight: 530;
     text-transform: uppercase;
     font-size: 1.25em;
     letter-spacing: 0.1em;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
+
 .inputBox{
     position: relative;
     width: 300px;
@@ -40,7 +41,7 @@ form h1{
 .inputBox input{
     position: relative;
     width: 100%;
-    padding: 8px 0;
+    padding: 10px 0;
     background: transparent;
     border: none;
     border-bottom: 2px solid #999;
@@ -48,19 +49,21 @@ form h1{
     color: #fff;
     font-size: 1em;
     letter-spacing: 0.15em;
-
 }
+
 .inputBox label{
     position: absolute;
     left: 0;
-    padding: 10px 0;
+    padding: 20px 0;
     pointer-events: none;
     color: #999;
 }
+
 .inputBox input:focus, .inputBox input:valid{
     border-bottom: 2px solid #05a005;
 }
 .inputBox input[type="submit"]{
+    margin-top: 15px;
     background: #05a005;
     border: none;
     padding: 15px;
@@ -72,6 +75,7 @@ form h1{
     cursor: pointer;
     transition: 0.5s;
 }
+
 .inputBox input[type="submit"]:hover{
     letter-spacing: 0.35em;
 }
