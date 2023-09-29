@@ -9,7 +9,7 @@
         VALUES('$company','$title','$req','$contact','$details')";
     if($conn->query($sql)===TRUE){
         echo"<script>alert('Registro completo')</script>";
-        header("refresh:0;url=http://localhost/Narino_Emplea/index.html");
+        header("refresh:0;url=http://localhost/NarinoEmplea/index.html");
     }else{
         echo"<script>alert('El registro no se pudo completar)</script>";
     }
