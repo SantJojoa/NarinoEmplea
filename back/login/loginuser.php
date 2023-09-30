@@ -1,6 +1,6 @@
 <?php
-    include("../assets/config/cnx_bd.php"); 
-    session_start(); //Crear Sesion
+    include("../../assets/config/cnx_bd.php"); 
+    session_start(); //Crear Sesión
 
     if(isset($_SESSION["id_usuario"]) and isset($_SESSION["username"])){ 
         header("Location: http://localhost/NarinoEmplea/front/pages/homeuser.php");

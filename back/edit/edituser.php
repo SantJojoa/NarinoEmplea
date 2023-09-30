@@ -41,7 +41,7 @@
             <input type="submit" value="Actualizar Datos">
         </div>
 
-        <a href="http://localhost/NarinoEmplea/front/pages/homeuser.php" ><font color="#ffffff">Regresar </font></a>
+        <a href="http://localhost/NarinoEmplea/front/pages/homeuser.php" ><font color="#fff ">Regresar </font></a>
     </form>
 </body>
 </html>

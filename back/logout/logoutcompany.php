@@ -5,5 +5,6 @@
     session_destroy(); 
 	
     //Redirecciona a la página de login
-    header('location: http://localhost/NarinoEmplea/front/login/loginuser.html'); 
+    echo "<script>alert('La sesión se cerro de manera correcta.)</script>";
+    header('location: http://localhost/NarinoEmplea/front/indexcompany.html'); 
 ?>
