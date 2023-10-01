@@ -9,7 +9,7 @@
         VALUES('$name','$charge','$req','$tel','$details')";
     if($conn->query($sql)===TRUE){
         echo"<script>alert('Oferta publicada')</script>";
-        header("refresh:0;url=http://localhost/NarinoEmplea/front/pages/homecompany.php");
+        header("refresh:0;url=http://localhost/NarinoEmplea/front/pages/homecompany.phpx");
     }else{
         echo"<script>alert('La oferta no se pudo publicar')</script>";
     }

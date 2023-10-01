@@ -19,7 +19,7 @@
         <div class="navbar">
             <img src="../../assets/img/logo.png" class="logo" alt="Logo de Nariño Emplea">
             <ul>
-                <li><a href="http://localhost/NarinoEmplea/back/edit/edituser.php">Actualizar datos</a></li>
+                <li><a href="http://localhost/NarinoEmplea/back/edit/editcompany.php">Actualizar datos</a></li>
                 <li><a href="http://localhost/NarinoEmplea/back/logout/logoutcompany.php">Cerrar Sesión</a></li>
             </ul>
         </div>
