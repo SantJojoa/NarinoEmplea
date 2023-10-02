@@ -20,7 +20,26 @@
             <input name="name" type="text" placeholder="Nombre empresa" value="<?php echo $_SESSION["name"]; ?>" readonly required>
         </div>
         <div class="inputBox">
-            <input name="charge" type="text" placeholder="Cargo" required>
+            <!--<input name="charge" type="text" placeholder="Cargo" required> -->
+            <?php 
+                $charge=$_SESSION['name'];
+                $sql="select * from charge where name='$charge'";
+                $result = $conn->query($sql);
+            ?>
+            <select name="charge">
+                <option value=""></option>
+                <?php
+                    // Verificar si se obtuvieron resultados de la consulta
+                    if ($result->num_rows > 0) {
+                        // Recorrer los resultados y generar las opciones del select
+                        while ($row = $result->fetch_assoc()) {
+                            echo "<option value='" . $row['charge'] . "'>" . $row['charge'] . "</option>";
+                        }
+                    } else {
+                        echo "<option value=''>No hay opciones disponibles</option>";
+                    }
+                ?>
+            </select>
         </div>
         <div class="inputBox">
             <input name="req" type="text" placeholder="Requisitos" required>

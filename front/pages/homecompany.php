@@ -27,6 +27,8 @@
             <h1><?php echo $_SESSION['name']; ?></h1>
             <p>Gestiona las vacantes para tu empresa de manera fácil.</p>              
             <a href = "http://localhost/NarinoEmplea/front/create/create_ofert.php"><button type="button"><span></span>Publicar Vacante</button></a> 
+            <a href = "http://localhost/NarinoEmplea/front/create/create_charge.php"><button type="button"><span></span>Crear Cargo</button></a> 
+            <a href = "http://localhost/NarinoEmplea/front/list/list_ofert.php"><button type="button"><span></span>Administrar Vacantes</button></a> 
         </div>
     </div>
     
