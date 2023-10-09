@@ -30,7 +30,7 @@
     $_SESSION['details']=$details;
     if ($conn->query($sql)===TRUE){
         echo"<script>alert('Datos Actualizados')</script>";
-       // header("refresh:0;url=http://localhost/NarinoEmplea/front/pages/homecompany.php");
+        header("refresh:0;url=http://localhost/NarinoEmplea/front/pages/homecompany.php");
     }
 
 

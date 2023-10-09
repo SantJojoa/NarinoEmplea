@@ -10,7 +10,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nariño Emplea | Registrarse</title>
+    <title>Nariño Emplea | Editar Usuario</title>
     <link rel="stylesheet" href="../../assets/css/styleregister.css">
     <link rel="icon" href="../../assets/img/NE ico nb.png">
 
@@ -28,10 +28,10 @@
             <input name="sl_name" placeholder="Segundo Apellido" type="text" value="<?php echo $_SESSION['sl_name']; ?>" required>
         </div>
         <div class="inputBox">
-            <input name="ced" placeholder="Numero de Cédula" type="text" value="<?php echo $_SESSION['id_usuario']; ?>" required>
+            <input name="ced" placeholder="Numero de Cédula" type="text" value="<?php echo $_SESSION['id_usuario']; ?>" required onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength="11" minlength="5">
         </div>
         <div class="inputBox">
-            <input name="email" placeholder="Email" type="text" value="<?php echo $_SESSION['email']; ?>" required>
+            <input name="email" placeholder="Email" type="email" value="<?php echo $_SESSION['email']; ?>" required>
         </div>
         <div class="inputBox">
             <input name="pass" placeholder="Contraseña" type="password" value="<?php echo $_SESSION['pass']; ?>" required>

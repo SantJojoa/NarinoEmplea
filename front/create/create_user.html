@@ -21,10 +21,10 @@
             <input name="sl_name" placeholder="Segundo Apellido" type="text" required>
         </div>
         <div class="inputBox">
-            <input name="ced" placeholder="Numero de Cédula" type="text" required>
+            <input name="ced" placeholder="Numero de Cédula" type="text" required  onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength="11" minlength="5"> 
         </div>
         <div class="inputBox">
-            <input name="email" placeholder="Email" type="text" required>
+            <input name="email" placeholder="Email" type="email" required>
         </div>
         <div class="inputBox">
             <input name="pass" placeholder="Contraseña" type="password" required>

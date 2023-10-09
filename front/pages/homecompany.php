@@ -2,7 +2,7 @@
     include("../../assets/config/cnx_bd.php"); 
     session_start();
     if(!isset($_SESSION["email"]) and isset($_SESSION["pass"]) ){
-        header("Location: http://localhost/NarinoEmplea/front/login/loginuser.html");
+        header("Location: http://localhost/NarinoEmplea/front/login/logincompany.html");
     }
 ?>
 <!DOCTYPE html>

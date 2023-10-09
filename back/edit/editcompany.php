@@ -10,7 +10,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nariño Emplea | Editar Datos</title>
+    <title> <?php echo $_SESSION['name'] ?> | Editar Datos</title>
     <link rel="stylesheet" href="../../assets/css/stylecompany.css">
     <link rel="icon" href="../../assets/img/NE ico nb.png">
 
@@ -19,19 +19,19 @@
     <form action="http://localhost/NarinoEmplea/back/edit/updatecompany.php" method="post">
         <h1>Actualizar Datos</h1>
         <div class="inputBox">
-            <input name="name" type="text" placeholder="Nombre(s)" value="<?php echo $_SESSION['name']; ?>" required>
+            <input name="name" type="text" placeholder="Nombre" value="<?php echo $_SESSION['name']; ?>" required>
         </div>
         <div class="inputBox">
-            <input name="nit" type="text" placeholder="Primer Apellido" value="<?php echo $_SESSION['nit']; ?>" required>
+            <input name="nit" type="text" placeholder="NIT" value="<?php echo $_SESSION['nit']; ?>" required onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
         </div>
         <div class="inputBox">
-            <input name="des" placeholder="Segundo Apellido" type="text" value="<?php echo $_SESSION['des']; ?>" required>
+            <input name="des" placeholder="¿Que hacen? (ej:restaurante)" type="text" value="<?php echo $_SESSION['des']; ?>" required>
         </div>
         <div class="inputBox">
-            <input name="email" placeholder="Numero de Cédula" type="text" value="<?php echo $_SESSION['email']; ?>" required>
+            <input name="email" placeholder="Email" type="text" value="<?php echo $_SESSION['email']; ?>" required>
         </div>
         <div class="inputBox">
-            <input name="pass" placeholder="Email" type="password" value="<?php echo $_SESSION['pass']; ?>" required>
+            <input name="pass" placeholder="Contraseña" type="password" value="<?php echo $_SESSION['pass']; ?>" required>
         </div>
         <div class="inputBox">
             <input type="submit" value="Actualizar Datos">

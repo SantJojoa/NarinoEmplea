@@ -14,7 +14,7 @@
             <input name="name" type="text" placeholder="Nombre de la empresa" required>
         </div>
         <div class="inputBox">
-            <input name="nit" type="text" placeholder="NIT" required>
+            <input name="nit" type="text" placeholder="NIT" required onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
         </div>
         <div class="inputBox">
             <input name="des" type="text" placeholder="¿Que hacen? (ej:restaurante)" required>
