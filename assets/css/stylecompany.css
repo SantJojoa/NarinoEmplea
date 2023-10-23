@@ -23,6 +23,7 @@ form{
     flex-direction: column;
     border-radius: 10px;
 }
+    
 form h1{
     color: #fff;
     font-weight: 500;
@@ -30,6 +31,12 @@ form h1{
     font-size: 1.25em;
     letter-spacing: 0.1em;
     margin-bottom: 20px;
+}
+
+form h4{
+    color: #05a005;
+    font-weight: 350;
+    font-size: 15PX;
 }
 
 .inputBox{
@@ -40,7 +47,7 @@ form h1{
 
 
 
-.inputBox input{
+.inputBox input,.inputBox textarea{
     position: relative;
     width: 100%;
     padding: 8px 0;
@@ -62,7 +69,7 @@ form h1{
     pointer-events: none;
     color: #999;
 }
-.inputBox input:focus, .inputBox input:valid{
+.inputBox input:focus, .inputBox input:valid,.inputBox textarea:focus,.inputBox textarea:valid{
     border-bottom: 2px solid #05a005;
 }
 .inputBox input[type="submit"]{
@@ -89,4 +96,65 @@ form p a{
     text-decoration: none;
     
 }
+
+table {
+    position: relative;
+    max-width: 900;
+    border-collapse: collapse;
+    padding: 30px;
+    width: 70%;
+    font-size: 15px;
+    font-weight: 400;
+    color: #212121;
+    background-color: #1c2630;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+    /*border: 3px solid white;*/
+    /*border-style: inset; /* Agregar esta línea para establecer el color de los bordes de la tabla en blanco */
+}
+
+th{
+    background-color: #bdbdbd;
+    font-weight: 600;
+    text-align: center;
+    padding: 12px 15px;
+    color: black;
+    
+}
+
+td{
+    text-align: center;
+    padding: 12px 15px;
+    border-bottom: 1px solid #bdbdbd;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #182129;
+}
+
+tr:hover {
+    background-color: rgba(0, 0, 0, 0.080);
+    transition: background-color 0.3s ease-in-out;
+}
+
+tr.selected {
+    background-color: #e1f5fe;
+}
+
+select[name="charge"] {
+    width: 100%;
+    background: transparent;
+    border: solid;
+    border-color: white;
+    border-bottom: 2px solid #999;
+    outline: #0ab3ff;
+    color: black;
+    font-size: 1em;
+    letter-spacing: 0.15em;
+}
+
+select[name="charge"]:checked {
+    color: white; /* Cambia el color del texto a blanco cuando se hace clic en una opción */
+}   
 

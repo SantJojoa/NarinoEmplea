@@ -1,0 +1,64 @@
+form h4{
+    color: #dab607;
+    font-weight: 350;
+    font-size: 15PX;
+}
+table {
+    position: relative;
+    left: 30px;
+    max-width: 900px;
+    border-collapse: collapse;
+    padding: 30px;
+    width: 50%;
+    font-size: 15px;
+    font-weight: 400;
+    color: #212121;
+    background-color: #1c2630;
+    border-radius: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+}
+
+th {
+    background-color: #dab607;
+    font-weight: 600;
+    text-align: center;
+    padding: 12px 15px;
+    color: black;
+}
+
+td {
+    text-align: center;
+    padding: 12px 15px;
+    border-bottom: 1px solid #bdbdbd;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #182129;
+}
+
+tr:hover {
+    background-color: rgba(0, 0, 0, 0.080);
+    transition: background-color 0.3s ease-in-out;
+}
+
+tr.selected {
+    background-color: #e1f5fe;
+}
+
+select[name="charge"] {
+    width: 100%;
+    background: transparent;
+    border: solid;
+    border-color: white;
+    border-bottom: 2px solid #999;
+    outline: #0ab3ff;
+    color: black;
+    font-size: 1em;
+    letter-spacing: 0.15em;
+}
+
+select[name="charge"]:checked {
+    color: white; /* Cambia el color del texto a blanco cuando se hace clic en una opción */
+}   
+

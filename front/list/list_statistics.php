@@ -1,9 +1,10 @@
-<?php 
+<?php
     include("../../assets/config/cnx_bd.php"); 
     session_start();
     if(!isset($_SESSION["email"]) and isset($_SESSION["pass"]) ){
-        header("Location: http://localhost/NarinoEmplea/front/login/loginuser.html");
-    }
+        header("Location: http://localhost/NarinoEmplea/front/login/logincompany.html");
+        }
+    $name_company=$_SESSION['name'];
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -15,18 +16,16 @@
     <link rel="icon" href="../../assets/img/NE ico nb.png">
 </head>
 <body>
-    <table >
+    <table border="1">
         <tr> 
-            <th>Nombre</th>
-            <th>Cargo</th>
-            <th>Requisitos</th>
-            <th>Teléfono</th>
-            <th>Detalles</th>
-            <th></th>
+            <td>Nombre Convocatoria</td>
+            <td>Total Participantes</td>
+            <td>Total Contratados</td>
+            <td>Promedio Contratados</td>
+            <td>Porcentaje Contratados</td>
         </tr>
         <?php 
-            $name=$_SESSION['name'];
-            $sql="select * from ofert where name='$name' and status=1";
+            $sql="select charge from ofert where name='$name_company'";
             $result = $conn->query($sql);
             // Verificar si se obtuvieron resultados de la consulta
             if ($result->num_rows > 0) {
@@ -34,11 +33,12 @@
                 while ($row = $result->fetch_assoc()) {
                     echo "<tr> 
                             <td> ".$row['name']." </td>
+                            <td> ".$row['l_name']." </td>
+                            <td> ".$row['sl_name']." </td>  
+                            <td> ".$row['email']." </td>
                             <td> ".$row['charge']." </td>
-                            <td> ".$row['req']." </td>
-                            <td> ".$row['tel']." </td>
-                            <td> ".$row['details']." </td>
-                            <td> <a href ='http://localhost/NarinoEmplea/back/edit/editofert.php?id=".$row['id']."'><img src = '../../assets/img/green_pencil.png' width='50px'></a></td>
+                            <td> <a href ='http://localhost/NarinoEmplea/back/ofert/status.php?id=".$row['id']."&s=c&ofert_id=".$row['ofert_id']."'><img src = '../../assets/img/lapiz.png' width='50px'></a></td>
+                            <td> <a href ='http://localhost/NarinoEmplea/back/ofert/status.php?id=".$row['id']."&s=r&ofert_id=".$row['ofert_id']."'><img src = '../../assets/img/lapiz.png' width='50px'></a></td>
                         </tr>";
                 }
             } else {

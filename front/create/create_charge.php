@@ -10,8 +10,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nariño Emplea | Registrarse</title>
+    <title><?php echo $_SESSION ['name'] ?> | Crear Cargo</title>
     <link rel="stylesheet" href="../../assets/css/stylecompany.css">
+    <link rel="icon" href="../../assets/img/NE ico nb.png">
 </head>
 <body>
     <form action="http://localhost/NarinoEmplea/back/create/create_charge.php" method="post">

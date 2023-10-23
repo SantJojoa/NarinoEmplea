@@ -32,17 +32,20 @@
             <input name="name" type="text" placeholder="Nombre empresa" value="<?php echo $_SESSION["name"]; ?>" readonly required>
         </div>
         <div class="inputBox">
+        <h4>Cargo</h4> 
         <input name="charge" type="text" placeholder="Cargo" value="<?php echo $row["charge"]; ?>" readonly required>
         </div>
         <div class="inputBox">
+            <h4>Teléfono</h4> 
             <input name="tel" placeholder="Contacto" type="text" value="<?php echo $row["tel"]; ?>" required>
         </div>
         <div class="inputBox">
+            <h4>Requisitos</h4> 
             <textarea name="" id="" cols="50" rows="10"
             > <?php echo $row['req']; ?></textarea>
         </div>
-
         <div class="inputBox">
+            <h4>Detalles</h4> 
             <textarea  name="" id="" cols="50" rows="10"
             > <?php echo $row['details']; ?></textarea>
         </div>

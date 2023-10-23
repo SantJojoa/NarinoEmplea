@@ -1,21 +1,23 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
-:root{
-    --clr: #0ab3ff;
 
+:root {
+    --clr: #0ab3ff;
 }
-body{
+
+body {
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     background: #1c2630;
 }
-form{
+
+form {
     background: #29313c;
     padding: 60px 80px 60px;
     text-align: center;
@@ -23,7 +25,28 @@ form{
     flex-direction: column;
     border-radius: 10px;
 }
-form h1{
+
+
+
+select[name="charge"] {
+    width: 100%;
+    background: transparent;
+    border: solid;
+    border-color: white;
+    border-bottom: 2px solid #999;
+    outline: #0ab3ff;
+    color: black;
+    font-size: 1em;
+    letter-spacing: 0.15em;
+}
+
+select[name="charge"]:checked {
+    color: white; /* Cambia el color del texto a blanco cuando se hace clic en una opción */
+}   
+
+
+
+form h1 {
     color: #fff;
     font-weight: 500;
     text-transform: uppercase;
@@ -31,12 +54,20 @@ form h1{
     letter-spacing: 0.1em;
     margin-bottom: 20px;
 }
-.inputBox{
+
+form h4{
+    color: #05a005;
+    font-weight: 350;
+    font-size: 15PX;
+}
+
+.inputBox {
     position: relative;
     width: 300px;
     margin-bottom: 22px;
 }
-.inputBox input{
+
+.inputBox input {
     position: relative;
     width: 100%;
     padding: 8px 0;
@@ -47,39 +78,47 @@ form h1{
     color: #fff;
     font-size: 1em;
     letter-spacing: 0.15em;
-
 }
-.inputBox label{
+
+.inputBox label {
     position: absolute;
     left: 0;
     padding: 10px 0;
     pointer-events: none;
     color: #999;
 }
-.inputBox input:focus, .inputBox input:valid{
+
+.inputBox input:focus,
+.inputBox input:valid {
     border-bottom: 2px solid #dab607;
 }
-.inputBox input[type="submit"]{
+
+.inputBox input[type="submit"] {
     background: #dab607;
     border: none;
     padding: 15px;
     border-radius: 50px;
-    color:#1c2630;
+    color: #1c2630;
     font-weight: 600;
     font-size: 1.15em;
     letter-spacing: 0.1em;
     cursor: pointer;
     transition: 0.5s;
 }
-.inputBox input[type="submit"]:hover{
+
+.inputBox input[type="submit"]:hover {
     letter-spacing: 0.35em;
 }
-form p{
+
+form p {
     color: #fff;
 }
-form p a{
+
+form p a {
     color: #F2CB05;
     font-weight: 500;
     text-decoration: none;
-    
 }
+
+
+

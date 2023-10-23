@@ -29,6 +29,8 @@
             <a href = "http://localhost/NarinoEmplea/front/create/create_ofert.php"><button type="button"><span></span>Publicar Vacante</button></a> 
             <a href = "http://localhost/NarinoEmplea/front/create/create_charge.php"><button type="button"><span></span>Crear Cargo</button></a> 
             <a href = "http://localhost/NarinoEmplea/front/list/list_ofert.php"><button type="button"><span></span>Administrar Vacantes</button></a> 
+            <a href = "http://localhost/NarinoEmplea/front/list/list_application.php"><button type="button"><span></span>Ver Postulantes</button></a> 
+            <!--  <a href = "http://localhost/NarinoEmplea/front/list/list_application.php"><button type="button"><span></span>Estadísticas</button></a> -->
         </div>
     </div>
     

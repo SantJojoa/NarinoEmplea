@@ -19,18 +19,23 @@
     <form action="http://localhost/NarinoEmplea/back/edit/updatecompany.php" method="post">
         <h1>Actualizar Datos</h1>
         <div class="inputBox">
+            <h4>Nombre:</h4> 
             <input name="name" type="text" placeholder="Nombre" value="<?php echo $_SESSION['name']; ?>" required>
         </div>
         <div class="inputBox">
+            <h4>NIT:</h4> 
             <input name="nit" type="text" placeholder="NIT" value="<?php echo $_SESSION['nit']; ?>" required onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
         </div>
         <div class="inputBox">
+            <h4>Razón Social:</h4> 
             <input name="des" placeholder="¿Que hacen? (ej:restaurante)" type="text" value="<?php echo $_SESSION['des']; ?>" required>
         </div>
         <div class="inputBox">
+            <h4>Email:</h4> 
             <input name="email" placeholder="Email" type="text" value="<?php echo $_SESSION['email']; ?>" required>
         </div>
         <div class="inputBox">
+            <h4>Contraseña:</h4> 
             <input name="pass" placeholder="Contraseña" type="password" value="<?php echo $_SESSION['pass']; ?>" required>
         </div>
         <div class="inputBox">

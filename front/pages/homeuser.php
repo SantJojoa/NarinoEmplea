@@ -26,7 +26,7 @@
         <div class="content">
             <h1>Bienvenido(a) <?php echo $_SESSION['username']; ?></h1>
             <p>Busca la vacante que mas se acomode a tus necesidades a solo un click.</p>              
-            <a href =""><button type="button"><span></span>Buscar Vacantes</button></a> 
+            <a href ="http://localhost/NarinoEmplea/front/pages/vacancy.php"><button type="button"><span></span>Buscar Vacantes</button></a> 
         </div>
     </div>
     

@@ -12,6 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nariño Emplea | Editar Usuario</title>
     <link rel="stylesheet" href="../../assets/css/styleregister.css">
+    <link rel="stylesheet" href="../../assets/css/styletable.css">
     <link rel="icon" href="../../assets/img/NE ico nb.png">
 
 </head>
@@ -19,21 +20,27 @@
     <form action="http://localhost/NarinoEmplea/back/edit/update_user.php" method="post">
         <h1>Actualizar Datos</h1>
         <div class="inputBox">
+            <h4>Nombre(s):</h4> 
             <input name="name" type="text" placeholder="Nombre(s)" value="<?php echo $_SESSION['username']; ?>" required>
         </div>
         <div class="inputBox">
+        <h4>Primer Apellido:</h4> 
             <input name="l_name" type="text" placeholder="Primer Apellido" value="<?php echo $_SESSION['l_name']; ?>" required>
         </div>
         <div class="inputBox">
+            <h4>Segundo Apellido:</h4> 
             <input name="sl_name" placeholder="Segundo Apellido" type="text" value="<?php echo $_SESSION['sl_name']; ?>" required>
         </div>
         <div class="inputBox">
-            <input name="ced" placeholder="Numero de Cédula" type="text" value="<?php echo $_SESSION['id_usuario']; ?>" required onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength="11" minlength="5">
+            <h4>Numero de Cédula:</h4> 
+            <input name="ced" placeholder="Numero de Cédula" type="text"  readonly value="<?php echo $_SESSION['id_usuario']; ?>" required   onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength="11" minlength="5">
         </div>
         <div class="inputBox">
+            <h4>Email:</h4> 
             <input name="email" placeholder="Email" type="email" value="<?php echo $_SESSION['email']; ?>" required>
         </div>
         <div class="inputBox">
+            <h4>Contraseña:</h4> 
             <input name="pass" placeholder="Contraseña" type="password" value="<?php echo $_SESSION['pass']; ?>" required>
         </div>
 
